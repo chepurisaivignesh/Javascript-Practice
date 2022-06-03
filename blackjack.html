@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+    <style>
+        * {
+            background-color: aquamarine;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            background-color: aliceblue;
+            border-radius: 5px;
+            font-size: 1rem;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">Blackjack</h1>
+    <div id='cardspace' style="text-align: center; height: 35vh">
+        <div style="
+          border-width: thick;
+          height: 30vh;
+          width: 10vw;
+          background-color: aliceblue;
+          border-radius: 1rem;
+          position: absolute;
+          left: 35vw;
+        ">
+            <p id="num1top" style="
+            position: absolute;
+            font-size: 1.5rem;
+            background-color: aliceblue;
+            top: 72%;
+            left: 82%;
+          "></p>
+            <p id="num1bottom" style="
+            position: absolute;
+            font-size: 1.5rem;
+            background-color: aliceblue;
+            bottom: 72%;
+            right: 82%;
+          "></p>
+        </div>
+        <div style="
+          border-width: thick;
+          height: 30vh;
+          width: 10vw;
+          background-color: aliceblue;
+          border-radius: 1rem;
+          position: absolute;
+          left: 55vw;
+        ">
+            <p id="num2top" style="
+            position: absolute;
+            font-size: 1.5rem;
+            background-color: aliceblue;
+            top: 72%;
+            left: 82%;
+          "></p>
+            <p id="num2bottom" style="
+            position: absolute;
+            font-size: 1.5rem;
+            background-color: aliceblue;
+            bottom: 72%;
+            right: 82%;
+          "></p>
+        </div>
+    </div>
+    <div>
+        <div style="display: flex; text-align: center; justify-content: center">
+            <h1 id="num1" style="
+            text-align: center;
+            background-color: black;
+            margin-right:1rem;
+            color: aliceblue;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+          "></h1>
+            <h1 id="num2" style="
+            text-align: center;
+            background-color: black;
+            margin-left:1rem;
+            color: aliceblue;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+          "></h1>
+        </div>
+
+        <h3 id="result" style="text-align: center;"></h3>
+        <h2 id="score" style="text-align: center;">Score: 0</h2>
+    </div>
+    <div style="text-align: center">
+        <button id="but" onclick="activity()" style="align-self: center">
+            Try again
+        </button>
+    </div>
+    <div style="text-align: center">
+        <button id="butreload" onclick="document.location.reload(true)" style="align-self: center">
+            Restart
+        </button>
+    </div>
+    <script src="blackjack.js"></script>
+</body>
+
+</html>
